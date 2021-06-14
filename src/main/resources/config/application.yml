@@ -1,0 +1,15 @@
+spring:
+  profiles:
+    active: dev
+  thymeleaf:
+    mode: HTML
+  mvc:
+    static-path-pattern: /**
+
+book:
+  name: 互聯網世界觀
+  author: 余建志
+  isbn: ${random.uuid}
+  description: ${book.name} ,這本書還不錯
+
+# application-{prod}.yml

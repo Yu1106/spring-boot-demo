@@ -1,0 +1,59 @@
+23:09:21.121 logback [main] INFO  com.jacky.SpringBootApiApplication - Starting SpringBootApiApplication using Java 1.8.0_281 on LAPTOP-VJLT4RKG with PID 6248 (C:\project\code\java\spring-boot-api\target\classes started by jacky in C:\project\code\java\spring-boot-demo)
+23:09:21.124 logback [main] DEBUG com.jacky.SpringBootApiApplication - Running with Spring Boot v2.4.5, Spring v5.3.6
+23:09:21.124 logback [main] INFO  com.jacky.SpringBootApiApplication - The following profiles are active: develop
+23:09:24.022 logback [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23:09:24.437 logback [main] INFO  com.jacky.SpringBootApiApplication - Started SpringBootApiApplication in 3.902 seconds (JVM running for 4.853)
+23:14:58.722 logback [main] INFO  com.jacky.SpringBootApiApplication - Starting SpringBootApiApplication using Java 1.8.0_281 on LAPTOP-VJLT4RKG with PID 17584 (C:\project\code\java\spring-boot-api\target\classes started by jacky in C:\project\code\java\spring-boot-demo)
+23:14:58.726 logback [main] DEBUG com.jacky.SpringBootApiApplication - Running with Spring Boot v2.4.5, Spring v5.3.6
+23:14:58.726 logback [main] INFO  com.jacky.SpringBootApiApplication - The following profiles are active: develop
+23:15:02.031 logback [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23:15:02.476 logback [main] INFO  com.jacky.SpringBootApiApplication - Started SpringBootApiApplication in 4.472 seconds (JVM running for 5.701)
+23:19:21.703 logback [main] INFO  com.jacky.SpringBootApiApplication - Starting SpringBootApiApplication using Java 1.8.0_281 on LAPTOP-VJLT4RKG with PID 4600 (C:\project\code\java\spring-boot-api\target\classes started by jacky in C:\project\code\java\spring-boot-demo)
+23:19:21.706 logback [main] DEBUG com.jacky.SpringBootApiApplication - Running with Spring Boot v2.4.5, Spring v5.3.6
+23:19:21.706 logback [main] INFO  com.jacky.SpringBootApiApplication - The following profiles are active: develop
+23:19:24.543 logback [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23:19:24.957 logback [main] INFO  com.jacky.SpringBootApiApplication - Started SpringBootApiApplication in 3.837 seconds (JVM running for 5.059)
+23:19:33.019 logback [main] INFO  com.jacky.SpringBootApiApplication - Starting SpringBootApiApplication using Java 1.8.0_281 on LAPTOP-VJLT4RKG with PID 21716 (C:\project\code\java\spring-boot-api\target\classes started by jacky in C:\project\code\java\spring-boot-demo)
+23:19:33.021 logback [main] DEBUG com.jacky.SpringBootApiApplication - Running with Spring Boot v2.4.5, Spring v5.3.6
+23:19:33.021 logback [main] INFO  com.jacky.SpringBootApiApplication - The following profiles are active: develop
+23:19:35.953 logback [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23:19:36.358 logback [main] INFO  com.jacky.SpringBootApiApplication - Started SpringBootApiApplication in 3.878 seconds (JVM running for 5.065)
+23:40:58.075 logback [main] INFO  com.jacky.SpringBootApiApplication - Starting SpringBootApiApplication using Java 1.8.0_281 on LAPTOP-VJLT4RKG with PID 21684 (C:\project\code\java\spring-boot-api\target\classes started by jacky in C:\project\code\java\spring-boot-demo)
+23:40:58.078 logback [main] DEBUG com.jacky.SpringBootApiApplication - Running with Spring Boot v2.4.5, Spring v5.3.6
+23:40:58.078 logback [main] INFO  com.jacky.SpringBootApiApplication - The following profiles are active: develop
+23:41:01.510 logback [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23:41:01.980 logback [main] INFO  com.jacky.SpringBootApiApplication - Started SpringBootApiApplication in 4.559 seconds (JVM running for 5.706)
+23:41:09.963 logback [http-nio-8080-exec-1] INFO  com.jacky.aspect.LogAspect - -------- doBefore ----------
+23:41:09.972 logback [http-nio-8080-exec-1] INFO  com.jacky.aspect.LogAspect - -------- deAfter ----------
+23:42:11.107 logback [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+23:42:11.112 logback [main] INFO  com.jacky.SpringBootApiApplication - Starting SpringBootApiApplication using Java 1.8.0_281 on LAPTOP-VJLT4RKG with PID 7440 (C:\project\code\java\spring-boot-api\target\classes started by jacky in C:\project\code\java\spring-boot-demo)
+23:42:11.112 logback [main] DEBUG com.jacky.SpringBootApiApplication - Running with Spring Boot v2.4.5, Spring v5.3.6
+23:42:11.112 logback [main] INFO  com.jacky.SpringBootApiApplication - The following profiles are active: dev
+23:42:11.643 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+23:42:11.692 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interfaces.
+23:42:12.152 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+23:42:12.159 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:42:12.160 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:42:12.160 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+23:42:12.253 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:42:12.253 logback [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1101 ms
+23:42:12.405 logback [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+23:42:12.441 logback [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.30.Final
+23:42:12.536 logback [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+23:42:12.615 logback [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+23:42:13.207 logback [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+23:42:13.218 logback [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+23:42:13.707 logback [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+23:42:13.715 logback [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+23:42:14.107 logback [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23:42:14.352 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+23:42:14.507 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+23:42:14.524 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+23:42:14.530 logback [main] INFO  com.jacky.SpringBootApiApplication - Started SpringBootApiApplication in 4.013 seconds (JVM running for 4.969)
+23:42:26.415 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:42:26.416 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+23:42:26.417 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+23:42:26.439 logback [http-nio-8080-exec-1] INFO  com.jacky.aspect.LogAspect - -------- doBefore ----------
+23:42:26.450 logback [http-nio-8080-exec-1] INFO  com.jacky.aspect.LogAspect - -------- deAfter ----------
+23:42:38.855 logback [http-nio-8080-exec-3] INFO  com.jacky.aspect.LogAspect - -------- doBefore ----------
+23:42:38.855 logback [http-nio-8080-exec-3] INFO  com.jacky.aspect.LogAspect - -------- deAfter ----------

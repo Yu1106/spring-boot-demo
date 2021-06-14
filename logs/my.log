@@ -1,0 +1,435 @@
+2021-05-24 00:04:58.570  INFO 7628 --- [main] com.jacky.SpringBootApiApplication       : Starting SpringBootApiApplication using Java 1.8.0_281 on LAPTOP-VJLT4RKG with PID 7628 (C:\project\code\java\spring-boot-api\target\classes started by jacky in C:\project\code\java\spring-boot-demo)
+2021-05-24 00:04:58.581 DEBUG 7628 --- [main] com.jacky.SpringBootApiApplication       : Running with Spring Boot v2.4.5, Spring v5.3.6
+2021-05-24 00:04:58.582  INFO 7628 --- [main] com.jacky.SpringBootApiApplication       : The following profiles are active: dev
+2021-05-24 00:04:59.274  INFO 7628 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-24 00:04:59.330  INFO 7628 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 1 JPA repository interfaces.
+2021-05-24 00:04:59.966  INFO 7628 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-24 00:04:59.976  INFO 7628 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-24 00:04:59.976  INFO 7628 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-24 00:05:00.088  INFO 7628 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-24 00:05:00.089  INFO 7628 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1446 ms
+2021-05-24 00:05:00.245  INFO 7628 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-24 00:05:00.331  INFO 7628 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.30.Final
+2021-05-24 00:05:00.438  INFO 7628 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-24 00:05:00.524  INFO 7628 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-24 00:05:01.178  INFO 7628 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-24 00:05:01.191  INFO 7628 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-05-24 00:05:01.744  INFO 7628 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-24 00:05:01.754  INFO 7628 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-24 00:05:02.405  WARN 7628 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-24 00:05:02.624  INFO 7628 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-24 00:05:03.098  INFO 7628 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-24 00:05:03.106  INFO 7628 --- [main] com.jacky.SpringBootApiApplication       : Started SpringBootApiApplication in 5.13 seconds (JVM running for 6.348)
+2021-05-24 00:05:06.679  INFO 7628 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-24 00:05:06.679  INFO 7628 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-24 00:05:06.680  INFO 7628 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-05-24 00:05:06.704  INFO 7628 --- [http-nio-8080-exec-1] com.jacky.aspect.LogAspect               :  Request -----RequestLog{url='/log', ip='127.0.0.1', classMethod='com.jacky.api.LogTestApi.log', args=[]}
+2021-05-24 00:05:06.714  INFO 7628 --- [http-nio-8080-exec-1] com.jacky.api.LogTestApi                 : info --- log
+2021-05-24 00:05:06.714  INFO 7628 --- [http-nio-8080-exec-1] com.jacky.aspect.LogAspect               :  Return -----logtest
+2021-05-24 00:05:06.714  INFO 7628 --- [http-nio-8080-exec-1] com.jacky.aspect.LogAspect               : -------- doAfter ----------
+2021-05-24 00:06:30.465  INFO 7628 --- [http-nio-8080-exec-5] com.jacky.aspect.LogAspect               :  Request -----RequestLog{url='/api/v1/books/7', ip='127.0.0.1', classMethod='com.jacky.api.BookApi.getBook', args=[7]}
+2021-05-24 00:06:30.537  INFO 7628 --- [http-nio-8080-exec-5] com.jacky.aspect.LogAspect               :  Return -----<200 OK OK,Book{id=7, name='余建志', author='余建志', status=0, description='Hihihi'},[]>
+2021-05-24 00:06:30.538  INFO 7628 --- [http-nio-8080-exec-5] com.jacky.aspect.LogAspect               : -------- doAfter ----------
+2021-05-24 00:07:24.273  INFO 7628 --- [http-nio-8080-exec-8] com.jacky.aspect.LogAspect               :  Request -----RequestLog{url='/api/v1/books/1', ip='127.0.0.1', classMethod='com.jacky.api.BookApi.getBook', args=[1]}
+2021-05-24 00:07:24.276  INFO 7628 --- [http-nio-8080-exec-8] com.jacky.aspect.LogAspect               : -------- doAfter ----------
+2021-05-24 00:13:26.247  INFO 20088 --- [main] com.jacky.SpringBootApiApplication       : Starting SpringBootApiApplication using Java 1.8.0_281 on LAPTOP-VJLT4RKG with PID 20088 (C:\project\code\java\spring-boot-api\target\classes started by jacky in C:\project\code\java\spring-boot-demo)
+2021-05-24 00:13:26.250 DEBUG 20088 --- [main] com.jacky.SpringBootApiApplication       : Running with Spring Boot v2.4.5, Spring v5.3.6
+2021-05-24 00:13:26.250  INFO 20088 --- [main] com.jacky.SpringBootApiApplication       : The following profiles are active: dev
+2021-05-24 00:13:26.961  INFO 20088 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-24 00:13:27.027  INFO 20088 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 1 JPA repository interfaces.
+2021-05-24 00:13:27.694  INFO 20088 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-24 00:13:27.702  INFO 20088 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-24 00:13:27.702  INFO 20088 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-24 00:13:27.816  INFO 20088 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-24 00:13:27.816  INFO 20088 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1502 ms
+2021-05-24 00:13:28.044  INFO 20088 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-24 00:13:28.121  INFO 20088 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.30.Final
+2021-05-24 00:13:28.240  INFO 20088 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-24 00:13:28.352  INFO 20088 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-24 00:13:29.049  INFO 20088 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-24 00:13:29.063  INFO 20088 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-05-24 00:13:29.811  INFO 20088 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-24 00:13:29.823  INFO 20088 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-24 00:13:30.540  WARN 20088 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-24 00:13:30.739  INFO 20088 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-24 00:13:31.186  INFO 20088 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-24 00:13:31.195  INFO 20088 --- [main] com.jacky.SpringBootApiApplication       : Started SpringBootApiApplication in 5.645 seconds (JVM running for 6.793)
+2021-05-24 00:13:32.926  INFO 20088 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-24 00:13:32.926  INFO 20088 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-24 00:13:32.928  INFO 20088 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-05-24 00:13:32.962  INFO 20088 --- [http-nio-8080-exec-1] com.jacky.aspect.LogAspect               :  Request -----RequestLog{url='/api/v1/books/1', ip='127.0.0.1', classMethod='com.jacky.api.BookApi.getBook', args=[1]}
+2021-05-24 00:13:33.011  INFO 20088 --- [http-nio-8080-exec-1] com.jacky.aspect.LogAspect               : -------- doAfter ----------
+2021-05-24 00:13:33.015  WARN 20088 --- [http-nio-8080-exec-1] com.jacky.handler.ApiExceptionHandler    :  Return -----<404 NOT_FOUND Not Found,com.jacky.resource.ErrorResource@208e8586,[]>
+2021-05-24 00:17:05.942  INFO 18880 --- [main] com.jacky.SpringBootApiApplication       : Starting SpringBootApiApplication using Java 1.8.0_281 on LAPTOP-VJLT4RKG with PID 18880 (C:\project\code\java\spring-boot-api\target\classes started by jacky in C:\project\code\java\spring-boot-demo)
+2021-05-24 00:17:05.945 DEBUG 18880 --- [main] com.jacky.SpringBootApiApplication       : Running with Spring Boot v2.4.5, Spring v5.3.6
+2021-05-24 00:17:05.945  INFO 18880 --- [main] com.jacky.SpringBootApiApplication       : The following profiles are active: dev
+2021-05-24 00:17:06.611  INFO 18880 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-24 00:17:06.661  INFO 18880 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interfaces.
+2021-05-24 00:17:07.245  INFO 18880 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-24 00:17:07.254  INFO 18880 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-24 00:17:07.254  INFO 18880 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-24 00:17:07.360  INFO 18880 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-24 00:17:07.360  INFO 18880 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1368 ms
+2021-05-24 00:17:07.520  INFO 18880 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-24 00:17:07.652  INFO 18880 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.30.Final
+2021-05-24 00:17:07.752  INFO 18880 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-24 00:17:07.838  INFO 18880 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-24 00:17:08.435  INFO 18880 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-24 00:17:08.448  INFO 18880 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-05-24 00:17:08.928  INFO 18880 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-24 00:17:08.936  INFO 18880 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-24 00:17:09.555  WARN 18880 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-24 00:17:09.761  INFO 18880 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-24 00:17:10.315  INFO 18880 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-24 00:17:10.327  INFO 18880 --- [main] com.jacky.SpringBootApiApplication       : Started SpringBootApiApplication in 4.883 seconds (JVM running for 5.84)
+2021-05-24 00:17:11.505  INFO 18880 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-24 00:17:11.505  INFO 18880 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-24 00:17:11.506  INFO 18880 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-05-24 00:17:11.542  INFO 18880 --- [http-nio-8080-exec-1] com.jacky.aspect.LogAspect               :  Request -----RequestLog{url='/api/v1/books/1', ip='127.0.0.1', classMethod='com.jacky.api.BookApi.getBook', args=[1]}
+2021-05-24 00:17:11.593  INFO 18880 --- [http-nio-8080-exec-1] com.jacky.aspect.LogAspect               : -------- doAfter ----------
+2021-05-24 00:17:11.598  WARN 18880 --- [http-nio-8080-exec-1] com.jacky.handler.ApiExceptionHandler    :  Return -----<404 NOT_FOUND Not Found,com.jacky.resource.ErrorResource@bc16951,[]>
+2021-05-24 00:18:26.549  INFO 9584 --- [main] com.jacky.SpringBootApiApplication       : Starting SpringBootApiApplication using Java 1.8.0_281 on LAPTOP-VJLT4RKG with PID 9584 (C:\project\code\java\spring-boot-api\target\classes started by jacky in C:\project\code\java\spring-boot-demo)
+2021-05-24 00:18:26.552 DEBUG 9584 --- [main] com.jacky.SpringBootApiApplication       : Running with Spring Boot v2.4.5, Spring v5.3.6
+2021-05-24 00:18:26.553  INFO 9584 --- [main] com.jacky.SpringBootApiApplication       : The following profiles are active: dev
+2021-05-24 00:18:27.137  INFO 9584 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-24 00:18:27.294  INFO 9584 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 149 ms. Found 1 JPA repository interfaces.
+2021-05-24 00:18:27.954  INFO 9584 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-24 00:18:27.961  INFO 9584 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-24 00:18:27.962  INFO 9584 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-24 00:18:28.066  INFO 9584 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-24 00:18:28.066  INFO 9584 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1470 ms
+2021-05-24 00:18:28.226  INFO 9584 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-24 00:18:28.375  INFO 9584 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.30.Final
+2021-05-24 00:18:28.498  INFO 9584 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-24 00:18:28.581  INFO 9584 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-24 00:18:29.194  INFO 9584 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-24 00:18:29.205  INFO 9584 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-05-24 00:18:29.712  INFO 9584 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-24 00:18:29.721  INFO 9584 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-24 00:18:30.349  WARN 9584 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-24 00:18:30.554  INFO 9584 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-24 00:18:31.029  INFO 9584 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-24 00:18:31.036  INFO 9584 --- [main] com.jacky.SpringBootApiApplication       : Started SpringBootApiApplication in 5.113 seconds (JVM running for 6.119)
+2021-05-24 00:18:35.710  INFO 9584 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-24 00:18:35.711  INFO 9584 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-24 00:18:35.712  INFO 9584 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-05-24 00:18:35.745  INFO 9584 --- [http-nio-8080-exec-1] com.jacky.aspect.LogAspect               :  Request -----RequestLog{url='/api/v1/books/1', ip='127.0.0.1', classMethod='com.jacky.api.BookApi.getBook', args=[1]}
+2021-05-24 00:18:35.793  INFO 9584 --- [http-nio-8080-exec-1] com.jacky.aspect.LogAspect               : -------- doAfter ----------
+2021-05-24 00:18:35.796  WARN 9584 --- [http-nio-8080-exec-1] com.jacky.handler.ApiExceptionHandler    :  Return ----- <404 NOT_FOUND Not Found,com.jacky.resource.ErrorResource@5abdaea8,[]>
+2021-05-24 00:19:02.066  INFO 16692 --- [main] com.jacky.SpringBootApiApplication       : Starting SpringBootApiApplication using Java 1.8.0_281 on LAPTOP-VJLT4RKG with PID 16692 (C:\project\code\java\spring-boot-api\target\classes started by jacky in C:\project\code\java\spring-boot-demo)
+2021-05-24 00:19:02.069 DEBUG 16692 --- [main] com.jacky.SpringBootApiApplication       : Running with Spring Boot v2.4.5, Spring v5.3.6
+2021-05-24 00:19:02.069  INFO 16692 --- [main] com.jacky.SpringBootApiApplication       : The following profiles are active: dev
+2021-05-24 00:19:02.735  INFO 16692 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-24 00:19:02.803  INFO 16692 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 1 JPA repository interfaces.
+2021-05-24 00:19:03.520  INFO 16692 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-24 00:19:03.534  INFO 16692 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-24 00:19:03.535  INFO 16692 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-24 00:19:03.667  INFO 16692 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-24 00:19:03.667  INFO 16692 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1551 ms
+2021-05-24 00:19:03.852  INFO 16692 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-24 00:19:03.988  INFO 16692 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.30.Final
+2021-05-24 00:19:04.096  INFO 16692 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-24 00:19:04.187  INFO 16692 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-24 00:19:04.890  INFO 16692 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-24 00:19:04.909  INFO 16692 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-05-24 00:19:05.578  INFO 16692 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-24 00:19:05.587  INFO 16692 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-24 00:19:06.293  WARN 16692 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-24 00:19:06.498  INFO 16692 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-24 00:19:06.950  INFO 16692 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-24 00:19:06.958  INFO 16692 --- [main] com.jacky.SpringBootApiApplication       : Started SpringBootApiApplication in 5.557 seconds (JVM running for 6.682)
+2021-05-24 00:19:17.794  INFO 5760 --- [main] com.jacky.SpringBootApiApplication       : Starting SpringBootApiApplication using Java 1.8.0_281 on LAPTOP-VJLT4RKG with PID 5760 (C:\project\code\java\spring-boot-api\target\classes started by jacky in C:\project\code\java\spring-boot-demo)
+2021-05-24 00:19:17.800 DEBUG 5760 --- [main] com.jacky.SpringBootApiApplication       : Running with Spring Boot v2.4.5, Spring v5.3.6
+2021-05-24 00:19:17.800  INFO 5760 --- [main] com.jacky.SpringBootApiApplication       : The following profiles are active: dev
+2021-05-24 00:19:18.639  INFO 5760 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-24 00:19:18.706  INFO 5760 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 1 JPA repository interfaces.
+2021-05-24 00:19:19.404  INFO 5760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-24 00:19:19.414  INFO 5760 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-24 00:19:19.414  INFO 5760 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-24 00:19:19.546  INFO 5760 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-24 00:19:19.546  INFO 5760 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1681 ms
+2021-05-24 00:19:19.732  INFO 5760 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-24 00:19:19.851  INFO 5760 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.30.Final
+2021-05-24 00:19:19.972  INFO 5760 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-24 00:19:20.071  INFO 5760 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-24 00:19:20.785  INFO 5760 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-24 00:19:20.802  INFO 5760 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-05-24 00:19:21.414  INFO 5760 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-24 00:19:21.423  INFO 5760 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-24 00:19:22.150  WARN 5760 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-24 00:19:22.397  INFO 5760 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-24 00:19:23.004  INFO 5760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-24 00:19:23.015  INFO 5760 --- [main] com.jacky.SpringBootApiApplication       : Started SpringBootApiApplication in 6.161 seconds (JVM running for 7.257)
+2021-05-24 00:19:26.538  INFO 5760 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-24 00:19:26.539  INFO 5760 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-24 00:19:26.540  INFO 5760 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-05-24 00:19:26.574  INFO 5760 --- [http-nio-8080-exec-1] com.jacky.aspect.LogAspect               :  Request -----RequestLog{url='/api/v1/books/1', ip='127.0.0.1', classMethod='com.jacky.api.BookApi.getBook', args=[1]}
+2021-05-24 00:19:26.622  INFO 5760 --- [http-nio-8080-exec-1] com.jacky.aspect.LogAspect               : -------- doAfter ----------
+2021-05-24 00:19:26.626  WARN 5760 --- [http-nio-8080-exec-1] com.jacky.handler.ApiExceptionHandler    :  Return ----- <404 NOT_FOUND Not Found,com.jacky.resource.ErrorResource@734d0a9a,[]>
+2021-05-24 00:19:55.815  INFO 19600 --- [main] com.jacky.SpringBootApiApplication       : Starting SpringBootApiApplication using Java 1.8.0_281 on LAPTOP-VJLT4RKG with PID 19600 (C:\project\code\java\spring-boot-api\target\classes started by jacky in C:\project\code\java\spring-boot-demo)
+2021-05-24 00:19:55.817 DEBUG 19600 --- [main] com.jacky.SpringBootApiApplication       : Running with Spring Boot v2.4.5, Spring v5.3.6
+2021-05-24 00:19:55.818  INFO 19600 --- [main] com.jacky.SpringBootApiApplication       : The following profiles are active: dev
+2021-05-24 00:19:56.462  INFO 19600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-24 00:19:56.526  INFO 19600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interfaces.
+2021-05-24 00:19:57.104  INFO 19600 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-24 00:19:57.113  INFO 19600 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-24 00:19:57.113  INFO 19600 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-24 00:19:57.227  INFO 19600 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-24 00:19:57.227  INFO 19600 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1363 ms
+2021-05-24 00:19:57.392  INFO 19600 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-24 00:19:57.530  INFO 19600 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.30.Final
+2021-05-24 00:19:57.634  INFO 19600 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-24 00:19:57.721  INFO 19600 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-24 00:19:58.365  INFO 19600 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-24 00:19:58.378  INFO 19600 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-05-24 00:19:58.912  INFO 19600 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-24 00:19:58.919  INFO 19600 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-24 00:19:59.546  WARN 19600 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-24 00:19:59.759  INFO 19600 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-24 00:20:00.263  INFO 19600 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-24 00:20:00.272  INFO 19600 --- [main] com.jacky.SpringBootApiApplication       : Started SpringBootApiApplication in 5.095 seconds (JVM running for 6.148)
+2021-05-24 00:21:17.660  INFO 19600 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-24 00:21:17.660  INFO 19600 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-24 00:21:17.663  INFO 19600 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2021-05-24 00:21:17.696  INFO 19600 --- [http-nio-8080-exec-1] com.jacky.aspect.LogAspect               :  Request -----RequestLog{url='/api/v1/books/1', ip='127.0.0.1', classMethod='com.jacky.api.BookApi.getBook', args=[1]}
+2021-05-24 00:21:17.744  INFO 19600 --- [http-nio-8080-exec-1] com.jacky.aspect.LogAspect               : -------- doAfter ----------
+2021-05-24 00:21:17.748  WARN 19600 --- [http-nio-8080-exec-1] com.jacky.handler.ApiExceptionHandler    :  Return ----- <404 NOT_FOUND Not Found,com.jacky.resource.ErrorResource@2b584e17,[]>
+2021-05-24 00:22:08.085  INFO 12748 --- [main] com.jacky.SpringBootApiApplication       : Starting SpringBootApiApplication using Java 1.8.0_281 on LAPTOP-VJLT4RKG with PID 12748 (C:\project\code\java\spring-boot-api\target\classes started by jacky in C:\project\code\java\spring-boot-demo)
+2021-05-24 00:22:08.088 DEBUG 12748 --- [main] com.jacky.SpringBootApiApplication       : Running with Spring Boot v2.4.5, Spring v5.3.6
+2021-05-24 00:22:08.088  INFO 12748 --- [main] com.jacky.SpringBootApiApplication       : The following profiles are active: dev
+2021-05-24 00:22:08.718  INFO 12748 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-24 00:22:08.767  INFO 12748 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interfaces.
+2021-05-24 00:22:09.301  INFO 12748 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-24 00:22:09.309  INFO 12748 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-24 00:22:09.310  INFO 12748 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-24 00:22:09.414  INFO 12748 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-24 00:22:09.414  INFO 12748 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1281 ms
+2021-05-24 00:22:09.571  INFO 12748 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-24 00:22:09.687  INFO 12748 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.30.Final
+2021-05-24 00:22:09.780  INFO 12748 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-24 00:22:09.857  INFO 12748 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-24 00:22:10.429  INFO 12748 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-24 00:22:10.441  INFO 12748 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-05-24 00:22:10.910  INFO 12748 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-24 00:22:10.919  INFO 12748 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-24 00:22:11.504  WARN 12748 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-24 00:22:11.660  INFO 12748 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-24 00:22:12.091  INFO 12748 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-24 00:22:12.098  INFO 12748 --- [main] com.jacky.SpringBootApiApplication       : Started SpringBootApiApplication in 4.567 seconds (JVM running for 5.657)
+2021-05-24 00:22:13.549  INFO 12748 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-24 00:22:13.549  INFO 12748 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-24 00:22:13.550  INFO 12748 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-05-24 00:22:13.584  INFO 12748 --- [http-nio-8080-exec-1] com.jacky.aspect.LogAspect               :  Request -----RequestLog{url='/api/v1/books/1', ip='127.0.0.1', classMethod='com.jacky.api.BookApi.getBook', args=[1]}
+2021-05-24 00:22:13.631  INFO 12748 --- [http-nio-8080-exec-1] com.jacky.aspect.LogAspect               : -------- doAfter ----------
+2021-05-24 00:22:13.635  WARN 12748 --- [http-nio-8080-exec-1] com.jacky.handler.ApiExceptionHandler    :  Return ----- book by id 1 not found
+2021-05-24 00:22:56.214  INFO 9416 --- [main] com.jacky.SpringBootApiApplication       : Starting SpringBootApiApplication using Java 1.8.0_281 on LAPTOP-VJLT4RKG with PID 9416 (C:\project\code\java\spring-boot-api\target\classes started by jacky in C:\project\code\java\spring-boot-demo)
+2021-05-24 00:22:56.216 DEBUG 9416 --- [main] com.jacky.SpringBootApiApplication       : Running with Spring Boot v2.4.5, Spring v5.3.6
+2021-05-24 00:22:56.216  INFO 9416 --- [main] com.jacky.SpringBootApiApplication       : The following profiles are active: dev
+2021-05-24 00:22:56.769  INFO 9416 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-24 00:22:56.820  INFO 9416 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interfaces.
+2021-05-24 00:22:57.355  INFO 9416 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-24 00:22:57.363  INFO 9416 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-24 00:22:57.363  INFO 9416 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-24 00:22:57.461  INFO 9416 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-24 00:22:57.461  INFO 9416 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1201 ms
+2021-05-24 00:22:57.623  INFO 9416 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-24 00:22:57.742  INFO 9416 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.30.Final
+2021-05-24 00:22:57.845  INFO 9416 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-24 00:22:57.956  INFO 9416 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-24 00:22:58.542  INFO 9416 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-24 00:22:58.553  INFO 9416 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-05-24 00:22:59.013  INFO 9416 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-24 00:22:59.021  INFO 9416 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-24 00:22:59.569  WARN 9416 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-24 00:22:59.728  INFO 9416 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-24 00:23:00.124  INFO 9416 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-24 00:23:00.130  INFO 9416 --- [main] com.jacky.SpringBootApiApplication       : Started SpringBootApiApplication in 4.413 seconds (JVM running for 5.351)
+2021-05-24 00:23:00.468  INFO 9416 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-24 00:23:00.469  INFO 9416 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-24 00:23:00.470  INFO 9416 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-05-24 00:23:00.500  INFO 9416 --- [http-nio-8080-exec-1] com.jacky.aspect.LogAspect               :  Request -----RequestLog{url='/api/v1/books/1', ip='127.0.0.1', classMethod='com.jacky.api.BookApi.getBook', args=[1]}
+2021-05-24 00:23:00.548  INFO 9416 --- [http-nio-8080-exec-1] com.jacky.aspect.LogAspect               : -------- doAfter ----------
+2021-05-24 00:23:00.555  WARN 9416 --- [http-nio-8080-exec-1] com.jacky.handler.ApiExceptionHandler    :  Return ----- {}
+
+com.jacky.exception.NotFoundException: book by id 1 not found
+	at com.jacky.api.BookApi.getBook(BookApi.java:48) ~[classes/:na]
+	at com.jacky.api.BookApi$$FastClassBySpringCGLIB$$827b23dc.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.6.jar:5.3.6]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779) ~[spring-aop-5.3.6.jar:5.3.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.6.jar:5.3.6]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.6.jar:5.3.6]
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:57) ~[spring-aop-5.3.6.jar:5.3.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.6.jar:5.3.6]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.6.jar:5.3.6]
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:49) ~[spring-aop-5.3.6.jar:5.3.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.6.jar:5.3.6]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.6.jar:5.3.6]
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58) ~[spring-aop-5.3.6.jar:5.3.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.6.jar:5.3.6]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.6.jar:5.3.6]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.6.jar:5.3.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.6.jar:5.3.6]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.6.jar:5.3.6]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) ~[spring-aop-5.3.6.jar:5.3.6]
+	at com.jacky.api.BookApi$$EnhancerBySpringCGLIB$$edab7df.getBook(<generated>) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_281]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_281]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_281]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_281]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) [spring-webmvc-5.3.6.jar:5.3.6]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) [tomcat-embed-core-9.0.45.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.3.6.jar:5.3.6]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) [tomcat-embed-core-9.0.45.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_281]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_281]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_281]
+
+2021-05-24 00:23:20.213  INFO 9416 --- [http-nio-8080-exec-2] com.jacky.aspect.LogAspect               :  Request -----RequestLog{url='/api/v1/books/10', ip='127.0.0.1', classMethod='com.jacky.api.BookApi.getBook', args=[10]}
+2021-05-24 00:23:20.226  INFO 9416 --- [http-nio-8080-exec-2] com.jacky.aspect.LogAspect               :  Return -----<200 OK OK,Book{id=10, name='余建志', author='余建志', status=0, description='Hihi23'},[]>
+2021-05-24 00:23:20.227  INFO 9416 --- [http-nio-8080-exec-2] com.jacky.aspect.LogAspect               : -------- doAfter ----------
+2021-05-24 00:24:08.475  INFO 17828 --- [main] com.jacky.SpringBootApiApplication       : Starting SpringBootApiApplication using Java 1.8.0_281 on LAPTOP-VJLT4RKG with PID 17828 (C:\project\code\java\spring-boot-api\target\classes started by jacky in C:\project\code\java\spring-boot-demo)
+2021-05-24 00:24:08.479 DEBUG 17828 --- [main] com.jacky.SpringBootApiApplication       : Running with Spring Boot v2.4.5, Spring v5.3.6
+2021-05-24 00:24:08.480  INFO 17828 --- [main] com.jacky.SpringBootApiApplication       : The following profiles are active: dev
+2021-05-24 00:24:09.041  INFO 17828 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-24 00:24:09.091  INFO 17828 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interfaces.
+2021-05-24 00:24:09.638  INFO 17828 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-24 00:24:09.646  INFO 17828 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-24 00:24:09.647  INFO 17828 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-24 00:24:09.755  INFO 17828 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-24 00:24:09.755  INFO 17828 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1220 ms
+2021-05-24 00:24:09.907  INFO 17828 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-24 00:24:09.995  INFO 17828 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.30.Final
+2021-05-24 00:24:10.101  INFO 17828 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-24 00:24:10.185  INFO 17828 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-24 00:24:10.798  INFO 17828 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-24 00:24:10.810  INFO 17828 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-05-24 00:24:11.382  INFO 17828 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-24 00:24:11.390  INFO 17828 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-24 00:24:11.963  WARN 17828 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-24 00:24:12.138  INFO 17828 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-24 00:24:12.561  INFO 17828 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-24 00:24:12.569  INFO 17828 --- [main] com.jacky.SpringBootApiApplication       : Started SpringBootApiApplication in 4.61 seconds (JVM running for 5.569)
+2021-05-24 00:24:14.121  INFO 17828 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-24 00:24:14.121  INFO 17828 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-24 00:24:14.124  INFO 17828 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-05-24 00:24:14.159  INFO 17828 --- [http-nio-8080-exec-1] com.jacky.aspect.LogAspect               :  Request -----RequestLog{url='/api/v1/books/10', ip='127.0.0.1', classMethod='com.jacky.api.BookApi.getBook', args=[10]}
+2021-05-24 00:24:14.216  INFO 17828 --- [http-nio-8080-exec-1] com.jacky.aspect.LogAspect               :  Return -----<200 OK OK,Book{id=10, name='余建志', author='余建志', status=0, description='Hihi23'},[]>
+2021-05-24 00:24:14.217  INFO 17828 --- [http-nio-8080-exec-1] com.jacky.aspect.LogAspect               : -------- doAfter ----------
+2021-05-24 00:24:18.722  INFO 17828 --- [http-nio-8080-exec-2] com.jacky.aspect.LogAspect               :  Request -----RequestLog{url='/api/v1/books/1', ip='127.0.0.1', classMethod='com.jacky.api.BookApi.getBook', args=[1]}
+2021-05-24 00:24:18.727  INFO 17828 --- [http-nio-8080-exec-2] com.jacky.aspect.LogAspect               : -------- doAfter ----------
+2021-05-24 00:24:18.733  WARN 17828 --- [http-nio-8080-exec-2] com.jacky.handler.ApiExceptionHandler    :  Return ----- {}
+
+com.jacky.exception.NotFoundException: book by id 1 not found
+	at com.jacky.api.BookApi.getBook(BookApi.java:48) ~[classes/:na]
+	at com.jacky.api.BookApi$$FastClassBySpringCGLIB$$827b23dc.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.6.jar:5.3.6]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779) ~[spring-aop-5.3.6.jar:5.3.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.6.jar:5.3.6]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.6.jar:5.3.6]
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:57) ~[spring-aop-5.3.6.jar:5.3.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.6.jar:5.3.6]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.6.jar:5.3.6]
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:49) ~[spring-aop-5.3.6.jar:5.3.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.6.jar:5.3.6]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.6.jar:5.3.6]
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58) ~[spring-aop-5.3.6.jar:5.3.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.6.jar:5.3.6]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.6.jar:5.3.6]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.6.jar:5.3.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.6.jar:5.3.6]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.6.jar:5.3.6]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) ~[spring-aop-5.3.6.jar:5.3.6]
+	at com.jacky.api.BookApi$$EnhancerBySpringCGLIB$$a8f4bd70.getBook(<generated>) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_281]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_281]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_281]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_281]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) [spring-webmvc-5.3.6.jar:5.3.6]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) [tomcat-embed-core-9.0.45.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.3.6.jar:5.3.6]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) [tomcat-embed-core-9.0.45.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_281]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_281]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_281]
+
+2021-05-24 00:24:56.072  INFO 17828 --- [http-nio-8080-exec-3] com.jacky.aspect.LogAspect               :  Request -----RequestLog{url='/api/v1/books/10', ip='127.0.0.1', classMethod='com.jacky.api.BookApi.getBook', args=[10]}
+2021-05-24 00:24:56.075  INFO 17828 --- [http-nio-8080-exec-3] com.jacky.aspect.LogAspect               :  Return -----<200 OK OK,Book{id=10, name='余建志', author='余建志', status=0, description='Hihi23'},[]>
+2021-05-24 00:24:56.076  INFO 17828 --- [http-nio-8080-exec-3] com.jacky.aspect.LogAspect               : -------- doAfter ----------

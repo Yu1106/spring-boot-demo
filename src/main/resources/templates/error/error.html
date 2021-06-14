@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>錯誤</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" th:href="@{/css/bootstrap.css}" href="/css/bootstrap.css">
+</head>
+<body>
+<div class="container" style="max-width: 600px;margin-top: 50px;"></div>
+
+<div class="">
+    <h2>Error</h2>
+    <p>對不起，服務異常，請聯繫管理員</p>
+    <div th:utext="'&lt;!--'" th:remove="tag"></div>
+    <p>請求路徑<code th:utext="${url}" th:remove="tag"></code></p>
+    <p>異常詳細<code th:utext="${exception.message}" th:remove="tag"></code></p>
+    <ul>
+        <li th:each="st:${exception.stackTrace}" th:remove="tag"><span th:utext="${st}" th:remove="tag"></span></li>
+    </ul>
+    <div th:utext="'--$gt'" th:remove="tag"></div>
+</div>
+</body>
+</html>

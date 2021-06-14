@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>書單詳情</title>
+
+    <link rel="stylesheet" th:href="@{/css/bootstrap.css}" href="/css/bootstrap.css">
+</head>
+<body>
+<div class="container">
+    <h2 class="page">書單列表</h2>
+    <div class="alert alert-success alert-dismissible" th:unless="${#strings.isEmpty(message)}">
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        <strong>恭喜, </strong>
+        <span th:text="${message}">信息提交成功</span>
+    </div>
+    <p class="d-grid gap-2 d-md-flex justify-content-md-end"><a href="./input.html" th:href="@{/books/input}"
+                                                                class="btn btn-primary">新增</a></p>
+    <table class="table table-bordered table-striped table-hover">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>書名</th>
+            <th>作者</th>
+            <th>說明</th>
+            <th>狀態</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!--
+        count: 計數 從1開始
+        index: 索引 從0開始
+        size: 列表總條數
+        even/odd: 偶數/奇數
+        first/last: 第一條/最後一條
+        -->
+        <tr th:each="book,item:${page.content}">
+            <td th:text="${item.count}">1</td>
+            <!--<td><a href="#" th:href="@{/books/{id}(id=${book.id})}" th:text="${book.name}">書名</a></td>-->
+            <td><a href="#" th:href="@{'/books/' + ${book.id}}" th:text="${book.name}">書名</a></td>
+            <td th:text="${book.author}">作者</td>
+            <td th:text="${book.description}">說明</td>
+            <td th:switch="*{book.status}">
+                <span th:case="0">想讀</span>
+                <span th:case="1">在讀</span>
+                <span th:case="2">已讀</span>
+                <span th:case="*">狀態</span>
+            </td>
+            <td>
+                <a href="" th:href="@{/books/{id}/input(id=${book.id})}">更新</a>&nbsp
+                <a href="" th:href="@{/books/{id}/delete(id=${book.id})}">刪除</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#" th:href="@{'/books?page=' + ${page.number -1}}"
+                                     th:unless="${page.first}">上一頁</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#" th:href="@{/books(page=${page.number + 1})}"
+                                     th:unless="${page.last}">下一頁</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script th:src="@{/js/bootstrap.js}" src="/js/bootstrap.js"></script>
+</body>
+</html>
